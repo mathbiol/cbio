@@ -2,9 +2,9 @@
 
 All you need is
 
-	<script src="https://ibl.github.io/cbio/cbio.js"></script>
+	<script src="https://mathbiol.github.io/cbio/cbio.js"></script>
 
-Live at: [https://ibl.github.io/cbio/](http://ibl.github.io/cbio/)
+Live at: [https://mathbiol.github.io/cbio/](http://mathbiol.github.io/cbio/)
 
 ---
 
@@ -74,10 +74,10 @@ cbio.get(
 ```javascript
 cbio.getTypesOfCancer( callbackFunction );
 ```
-example: 
+example:
 
 ```javascript
-	
+
 cbio.getTypesOfCancer()
 
 ```
@@ -86,10 +86,10 @@ cbio.getTypesOfCancer()
 ```javascript
 cbio.getCancerStudies( callbackFunction );
 ```
-example: 
+example:
 
 ```javascript
-	
+
 cbio.getCancerStudies()
 
 ```
@@ -98,36 +98,36 @@ cbio.getCancerStudies()
 ```javascript
 cbio.getGeneticProfiles( "cancer study ID (required)" , callbackFunction)
 ```
-example: 
+example:
 
 ```javascript
 
-	cbio.getGeneticProfiles("gbm_tcga") 
+	cbio.getGeneticProfiles("gbm_tcga")
 ```
 
 ### getCaseLists
 ```javascript
 cbio.getCaseLists(cancer_study_id)
 ```
-example: 
+example:
 
-```javascript	
-cbio.getCaseLists("gbm_tcga") 
+```javascript
+cbio.getCaseLists("gbm_tcga")
 ```
 
 ### getProfileData
 
 ```javascript
 
-cbio.getProfileData({ 
-	case_set_id: "case set ID (required)" , 
+cbio.getProfileData({
+	case_set_id: "case set ID (required)" ,
 	genetic_profile_id: "one or more genetic profile IDs (required)",
-	gene_list: "one or more HUGO Gene Symbols or Entrez Gene IDs (required)" 
+	gene_list: "one or more HUGO Gene Symbols or Entrez Gene IDs (required)"
 })
 
 ```
 
-examples: 
+examples:
 
 ```javascript
 cbio.getProfileData({
@@ -148,7 +148,7 @@ cbio.getProfileData({
 
 ```javascript
 
-cbio.getMutationData({ 
+cbio.getMutationData({
 	genetic_profile_id: "one or more mutation profile IDs (required)",
 	case_set_id: "case set ID (optional)",
 	gene_list: "one or more HUGO Gene Symbols or Entrez Gene IDs (required)"
@@ -156,8 +156,8 @@ cbio.getMutationData({
 
 ```
 
-examples: 
- 
+examples:
+
 ```javascript
 cbio.getMutationData({
 	case_set_id:"gbm_tcga_all",
@@ -175,11 +175,11 @@ cbio.getMutationData({
 
 cbio.getClinicalData("case set ID (required)")
 
-example: 
+example:
 
 ```javascript
-	
-	cbio.getClinicalData("ov_tcga_all") 
+
+	cbio.getClinicalData("ov_tcga_all")
 ```
 
 ### getProteinArrayInfo
@@ -194,7 +194,7 @@ cbio.getProteinArrayInfo({
 
 examples:
 
-```javascript	
+```javascript
 cbio.getProteinArrayInfo({cancer_study_id:"coadread_tcga"})
 
 cbio.getProteinArrayInfo({
@@ -233,7 +233,7 @@ examples:
 ```javascript
 cbio.getLinkStudy(parms)
 ```
-example: 
+example:
 ```javascript
 	cbio.getLinkStudy({cancer_study_id:"gbm_tcga",gene_list:["EGFR","NF1"]}) // returns URL
 
@@ -243,7 +243,7 @@ example:
 
 cbio.getLinkCase(parms)
 
-examples: 
+examples:
 
 ```javascript
 	cbio.getLinkCase({case_id:"TCGA-81-5910",cancer_study_id:"gbm_tcga"})  // returns URL
@@ -255,4 +255,3 @@ examples:
 ### oncoprint
 
 ...
-

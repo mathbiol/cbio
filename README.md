@@ -1,4 +1,4 @@
-# IBL/cBio
+# mathbiol/cbio
 
 All you need is
 

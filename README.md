@@ -26,7 +26,7 @@ All commands below are a type of bio.get, sy submitting command cmd to cbio WebA
 ```javascript
 cbio.getTypesOfCancer()
 ```
-is
+is the same as
 ```javascript
 cbio.get('getTypesOfCancer')
 ```

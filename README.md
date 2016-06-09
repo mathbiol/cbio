@@ -24,7 +24,11 @@ cbio.get = function(cmd,fun,parms)
 
 All commands below are a type of bio.get, sy submitting command cmd to cbio WebAPI and process it through callback function fun with option parameters parms. For example
 ```javascript
-cbio.getTypesOfCancer is cbio.get('getTypesOfCancer')
+cbio.getTypesOfCancer()
+```
+is
+```javascript
+cbio.get('getTypesOfCancer')
 ```
 and
 
